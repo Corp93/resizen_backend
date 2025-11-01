@@ -12,7 +12,7 @@ COPY . .
 # 2. Récupérer les packages
 # dart pub get DOIT être exécuté APRÈS la copie de tout le code pour 
 # s'assurer que les chemins locaux (si vous en avez) sont valides.
-RUN dart pub get
+RUN flutter pub get
 
 # Compiler le serveur Dart en exécutable
 RUN dart compile exe bin/server.dart -o bin/server
