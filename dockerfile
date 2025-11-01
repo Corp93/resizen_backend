@@ -8,7 +8,7 @@ WORKDIR /app
 COPY pubspec.* ./
 
 # Récupérer les packages
-RUN dart pub get
+RUN flutter pub get
 
 # Copier tout le code
 COPY . .
